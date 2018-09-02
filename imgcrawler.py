@@ -62,7 +62,7 @@ for i in range(1, Get_Count):
                                 Minute = created_at[14:16]
                                 Second = created_at[17:19]
                                 Year = created_at[26:]
-                                img_name = Name+"_"+Year+"_"+Month+"_"+Date+"_"+Hour+"_"+Minute+"_"+Second
+                                img_name = Year+"_"+Month+"_"+Date+"_"+Hour+"_"+Minute+"_"+Second
 
                                 hsashtag_path = '_'.join(mlist)
                                 os.makedirs(Path + hsashtag_path,

@@ -64,7 +64,8 @@ for i in range(1, Get_Count):
                                 Year = created_at[26:]
                                 img_name = Year+"_"+Month+"_"+Date+"_"+Hour+"_"+Minute+"_"+Second
 
-                                hsashtag_path = '_'.join(mlist)
+                                hsashtag_path = '_'.join(
+                                    list(map(lambda x: x.replace('#', ''), mlist)))
                                 os.makedirs(Path + hsashtag_path,
                                             exist_ok=True)
 
